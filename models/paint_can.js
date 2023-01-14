@@ -2,6 +2,18 @@ const PaintCan = function(litresOfPaint) {
     this.litresOfPaint = litresOfPaint
 }
 
+PaintCan.prototype.isPaintEmpty = function() {
+    if (this.litresOfPaint > 0) {
+        return false
+    } else {
+        return true
+    }
+}
+
+PaintCan.prototype.emptyCan = function() {
+    this.litresOfPaint = 0
+}
+
 module.exports = PaintCan
 // A paint can should:
 
